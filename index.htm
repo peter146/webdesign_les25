@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Training</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#accordion").accordion();
+            $("#knop").click(function () {
+                window.alert("Bedankt om uw keuze door te geven. We nemen zo spoedig mogelijk contact met u op.");
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <h3>Ons trainingsaanbod</h3>
+    <p>Hieronder kan u kiezen uit verschillende trainings die we u aanbieden.</p>
+
+    <div id="accordion">
+        <h3>Een nieuwe vertaalaanvraag</h3>
+        <div>
+            <p>We leggen u uit hoe u op ons platform een nieuwe aanvraag kan indienen en hoe u vervolgens uw project kan
+                opvolgen, van offertefase tot de uiteindelijke aanlevering.</p>
+        </div>
+        <h3>Een extra controlestap door u in het vertaalproces.</h3>
+        <div>
+            <p>We voorzien een bijkomende fase in het vertaalproces waarbij u de kans krijgt om de tekst zelf
+                inhoudelijk
+                na te kijken. We leggen u uit hoe u in onze online toepassing de vertaling valideert.</p>
+        </div>
+        <h3>Specifieke AI-toepassingen</h3>
+        <div>
+            <p>We bekijken samen met u hoe we door middel van AI-oplossingen uw efficiëntie kunnen verhogen en een
+                meerwaarde kunnen bieden in uw ecosysteem.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form>
+        <label>
+            <input type="radio" name="training" value="aanvraag" id="aanvraag" checked>Nieuwe aanvraag
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="training" value="controlestap" id="controlestap">Extra controlestap
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="training" value="AI" id="AI">AI-toepassingen
+        </label>
+        <br>
+        <br>
+        <button type="submit" name="knop" id="knop">Verzenden</button>
+    </form>
+    <noscript>
+        Om deze website optimaal te gebruiken, is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+</body>
+
+</html>
